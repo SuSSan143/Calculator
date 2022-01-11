@@ -1,0 +1,38 @@
+.semicircle {
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  background: #1988ff;
+  height: 200px;
+  width: 320px;
+  margin: 0 auto;
+  /* box-shadow: 0 13.8px 3.7px rgba(0, 0, 0, 0.018), 0 20.4px 10.1px rgba(0, 0, 0, 0.023), 0 28.5px 24.4px rgba(0, 0, 0, 0.028), 0 53px 81px rgba(0, 0, 0, 0.05) ; */
+}
+
+.semicircle::before {
+  position: absolute;
+  content: '';
+  left: 39%;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: inherit;
+  transform: translateX(190%) translateY(70%);
+  bottom: 0px;
+}
+
+.top_wave {
+  border-radius: 25px 25px 0 0;
+  height: 150px;
+  overflow: hidden;
+}
+
+.top_svg {
+  height: 100%;
+  width: 150%;
+}
+
+.top_svg_path {
+  stroke: none;
+  fill: #017aff;
+}
